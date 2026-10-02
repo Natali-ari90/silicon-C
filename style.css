@@ -159,9 +159,11 @@ align-items: center;
     display: block;
 }
 
+
 .store-buttons .store-dark {
     display: none;
 }
+
 
 
 body:has(.theme-checkbox:checked) .store-light {
@@ -171,7 +173,6 @@ body:has(.theme-checkbox:checked) .store-light {
 body:has(.theme-checkbox:checked) .store-buttons .store-dark {
     display: block;
 }
-
 
 /* =========================
    BRANDS
@@ -892,15 +893,20 @@ body:has(.theme-checkbox:checked) .store-buttons .store-dark {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
+    transform: translateX(65px);
+    
 }
 
 .how-phones img {
-    width: 30%;
-    max-width: 220px;
-    height: auto;
-   }
+    width: 170px;
+    height: 344px;
+    object-fit: contain;
+}
 
+.how-phones img:nth-child(3) {
+    transform: translateX(-65px);
+}
 
 .how-it-works {
     padding: 60px 32px;
